@@ -1,0 +1,266 @@
+
+
+====================================
+Log started, 15/12/2015 03:12:38
+====================================
+
+DataProcessor object initialized
+1450146332069_id => 
+1450146332069_BatchNo => y
+1450146332069_Supplier => y
+1450146332069_ArrivalDate => 2015-12-05 13:25:00
+1450146332069_Username => y
+1450146332069_!nativeeditor_status => inserted
+ids => 1450146332069
+
+Row data [1450146332069]
+id => 
+BatchNo => y
+Supplier => y
+ArrivalDate => 2015-12-05 13:25:00
+Username => y
+!nativeeditor_status => inserted
+
+INSERT INTO generators(`id`,`BatchNo`,`Supplier`,`ArrivalDate`,`Username`) VALUES ('','y','y','2015-12-05 13:25:00','y')
+
+Edit operation finished
+0 => action:inserted; sid:1450146332069; tid:961;
+
+Done in 0.00433707237244s
+
+
+
+====================================
+Log started, 15/12/2015 03:12:37
+====================================
+
+DataProcessor object initialized
+1450146392604_id => 
+1450146392604_BatchNo => j
+1450146392604_Supplier => j
+1450146392604_ArrivalDate => 2015-12-25 13:26:00
+1450146392604_Username => j
+1450146392604_!nativeeditor_status => inserted
+ids => 1450146392604
+
+Row data [1450146392604]
+id => 
+BatchNo => j
+Supplier => j
+ArrivalDate => 2015-12-25 13:26:00
+Username => j
+!nativeeditor_status => inserted
+
+INSERT INTO generators(`id`,`BatchNo`,`Supplier`,`ArrivalDate`,`Username`) VALUES ('','j','j','2015-12-25 13:26:00','j')
+
+Edit operation finished
+0 => action:inserted; sid:1450146392604; tid:962;
+
+Done in 0.00303506851196s
+
+
+
+====================================
+Log started, 15/12/2015 03:12:04
+====================================
+
+DataProcessor object initialized
+1450146836232_id => 
+1450146836232_BatchNo => t
+1450146836232_Supplier => t
+1450146836232_ArrivalDate => 2015-12-17 13:34:00
+1450146836232_Username => t
+1450146836232_!nativeeditor_status => inserted
+ids => 1450146836232
+
+Row data [1450146836232]
+id => 
+BatchNo => t
+Supplier => t
+ArrivalDate => 2015-12-17 13:34:00
+Username => t
+!nativeeditor_status => inserted
+
+INSERT INTO generators(`id`,`BatchNo`,`Supplier`,`ArrivalDate`,`Username`) VALUES ('','t','t','2015-12-17 13:34:00','t')
+
+Edit operation finished
+0 => action:inserted; sid:1450146836232; tid:963;
+
+Done in 0.040431022644s
+
+
+
+====================================
+Log started, 15/12/2015 03:12:25
+====================================
+
+DataProcessor object initialized
+1450146855199_id => 
+1450146855199_BatchNo => 4
+1450146855199_Supplier => 4
+1450146855199_ArrivalDate => 2015-12-18 13:34:00
+1450146855199_Username => 4
+1450146855199_!nativeeditor_status => inserted
+ids => 1450146855199
+
+Row data [1450146855199]
+id => 
+BatchNo => 4
+Supplier => 4
+ArrivalDate => 2015-12-18 13:34:00
+Username => 4
+!nativeeditor_status => inserted
+
+INSERT INTO generators(`id`,`BatchNo`,`Supplier`,`ArrivalDate`,`Username`) VALUES ('','4','4','2015-12-18 13:34:00','4')
+
+Edit operation finished
+0 => action:inserted; sid:1450146855199; tid:964;
+
+Done in 0.00313711166382s
+
+
+
+====================================
+Log started, 15/12/2015 03:12:27
+====================================
+
+DataProcessor object initialized
+964_id => 
+964_BatchNo => 4
+964_Supplier => 4
+964_ArrivalDate => 2015-12-18 13:34:00
+964_Username => 4
+964_!nativeeditor_status => updated
+ids => 964
+
+Row data [964]
+id => 
+BatchNo => 4
+Supplier => 4
+ArrivalDate => 2015-12-18 13:34:00
+Username => 4
+!nativeeditor_status => updated
+
+UPDATE generators SET `id`='',`BatchNo`='4',`Supplier`='4',`ArrivalDate`='2015-12-18 13:34:00',`Username`='4' WHERE `id`='964'
+
+exception 'Exception' with message 'MySQL operation failed
+Duplicate entry '0' for key 'PRIMARY'' in /Users/nucmed/PhpstormProjects/demo/codebase/db_common.php:965
+Stack trace:
+#0 /Users/nucmed/PhpstormProjects/demo/codebase/db_common.php(637): MySQLDBDataWrapper->query('UPDATE generato...')
+#1 [internal function]: DBDataWrapper->update(Object(DataAction), Object(DataRequestConfig))
+#2 /Users/nucmed/PhpstormProjects/demo/codebase/dataprocessor.php(222): call_user_func(Array, Object(DataAction), Object(DataRequestConfig))
+#3 /Users/nucmed/PhpstormProjects/demo/codebase/dataprocessor.php(173): DataProcessor->check_exts(Object(DataAction), 'update')
+#4 /Users/nucmed/PhpstormProjects/demo/codebase/dataprocessor.php(102): DataProcessor->inner_process(Object(DataAction))
+#5 /Users/nucmed/PhpstormProjects/demo/codebase/base_connector.php(475): DataProcessor->process(Object(DataConfig), Object(DataRequestConfig))
+#6 /Users/nucmed/PhpstormProjects/demo/codebase/base_connector.php(398): Connector->render()
+#7 /Users/nucmed/PhpstormProjects/demo/data/formGenerators.php(11): Connector->render_table('generators', 'id', 'id,BatchNo,Supp...')
+#8 {main}
+
+Edit operation finished
+0 => action:error; sid:964; tid:964;
+
+Done in 0.0652129650116s
+
+
+
+====================================
+Log started, 15/12/2015 03:12:11
+====================================
+
+DataProcessor object initialized
+1450146946117_id => 
+1450146946117_BatchNo => tg
+1450146946117_Supplier => t
+1450146946117_ArrivalDate => 2015-12-17 13:35:00
+1450146946117_Username => t
+1450146946117_!nativeeditor_status => inserted
+ids => 1450146946117
+
+Row data [1450146946117]
+id => 
+BatchNo => tg
+Supplier => t
+ArrivalDate => 2015-12-17 13:35:00
+Username => t
+!nativeeditor_status => inserted
+
+INSERT INTO generators(`id`,`BatchNo`,`Supplier`,`ArrivalDate`,`Username`) VALUES ('','tg','t','2015-12-17 13:35:00','t')
+
+Edit operation finished
+0 => action:inserted; sid:1450146946117; tid:966;
+
+Done in 0.0251920223236s
+
+
+
+====================================
+Log started, 15/12/2015 03:12:54
+====================================
+
+DataProcessor object initialized
+966_id => 
+966_BatchNo => tg
+966_Supplier => t
+966_ArrivalDate => 2015-12-17 13:35:00
+966_Username => t
+966_!nativeeditor_status => updated
+ids => 966
+
+Row data [966]
+id => 
+BatchNo => tg
+Supplier => t
+ArrivalDate => 2015-12-17 13:35:00
+Username => t
+!nativeeditor_status => updated
+
+UPDATE generators SET `id`='',`BatchNo`='tg',`Supplier`='t',`ArrivalDate`='2015-12-17 13:35:00',`Username`='t' WHERE `id`='966'
+
+exception 'Exception' with message 'MySQL operation failed
+Duplicate entry '0' for key 'PRIMARY'' in /Users/nucmed/PhpstormProjects/demo/codebase/db_common.php:965
+Stack trace:
+#0 /Users/nucmed/PhpstormProjects/demo/codebase/db_common.php(637): MySQLDBDataWrapper->query('UPDATE generato...')
+#1 [internal function]: DBDataWrapper->update(Object(DataAction), Object(DataRequestConfig))
+#2 /Users/nucmed/PhpstormProjects/demo/codebase/dataprocessor.php(222): call_user_func(Array, Object(DataAction), Object(DataRequestConfig))
+#3 /Users/nucmed/PhpstormProjects/demo/codebase/dataprocessor.php(173): DataProcessor->check_exts(Object(DataAction), 'update')
+#4 /Users/nucmed/PhpstormProjects/demo/codebase/dataprocessor.php(102): DataProcessor->inner_process(Object(DataAction))
+#5 /Users/nucmed/PhpstormProjects/demo/codebase/base_connector.php(475): DataProcessor->process(Object(DataConfig), Object(DataRequestConfig))
+#6 /Users/nucmed/PhpstormProjects/demo/codebase/base_connector.php(398): Connector->render()
+#7 /Users/nucmed/PhpstormProjects/demo/data/formGenerators.php(11): Connector->render_table('generators', 'id', 'id,BatchNo,Supp...')
+#8 {main}
+
+Edit operation finished
+0 => action:error; sid:966; tid:966;
+
+Done in 0.0563931465149s
+
+
+
+====================================
+Log started, 15/12/2015 03:12:08
+====================================
+
+DataProcessor object initialized
+1450147983051_id => 
+1450147983051_BatchNo => rtr
+1450147983051_Supplier => rr
+1450147983051_ArrivalDate => 2015-12-24 13:53:00
+1450147983051_Username => r
+1450147983051_!nativeeditor_status => inserted
+ids => 1450147983051
+
+Row data [1450147983051]
+id => 
+BatchNo => rtr
+Supplier => rr
+ArrivalDate => 2015-12-24 13:53:00
+Username => r
+!nativeeditor_status => inserted
+
+INSERT INTO generators(`id`,`BatchNo`,`Supplier`,`ArrivalDate`,`Username`) VALUES ('','rtr','rr','2015-12-24 13:53:00','r')
+
+Edit operation finished
+0 => action:inserted; sid:1450147983051; tid:968;
+
+Done in 0.00293302536011s
+
